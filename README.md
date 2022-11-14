@@ -46,3 +46,9 @@ CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app:app
 touch runtime.txt
 touch Procfile
 ```
+8. Create ignore file for some file will not store in GitHub and Docker image/DockerHub
+```
+touch .gitignore
+touch .dockerignore
+```
+9. 
