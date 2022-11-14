@@ -51,4 +51,13 @@ touch Procfile
 touch .gitignore
 touch .dockerignore
 ```
-9. 
+9. Create CI/CD Pipeline through `GitHub Actions`
+```
+open GitHub Project -> Settings -> Secrets -> Actions -> New repository secret
+Name: HEROKU_EMAIL
+Value: emailadress
+Name: HEROKU_API_KEY
+Value: Key_vale
+Name: HEROKU_APP_NAME
+Value: App_name
+```
