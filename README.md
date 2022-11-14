@@ -22,3 +22,11 @@ touch app.py
 pip install -r requirements.txt
 python app.py
 ```
+4. Create yaml file through github for some scripting
+link: https://github.com/marketplace/actions/build-push-and-release-a-docker-container-to-heroku
+```
+mkdir .github
+mkdir .github/workflows
+touch .github/workflows/main.yaml
+```
+5. Create Docker File 
