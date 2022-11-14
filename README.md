@@ -30,3 +30,19 @@ mkdir .github/workflows
 touch .github/workflows/main.yaml
 ```
 5. Create Docker File 
+```
+touch Dockerfile
+FROM python:3.7
+COPY . /app
+WORKDIR /app
+RUN pip install -r requirements.txt
+EXPOSE $PORT
+CMD gunicorn --workers=4 --bind 0.0.0.0:$PORT app:app
+```
+6. Create `setup.py` file to find the own packages and py module
+7. Create Heroku deployment file: runfile and procfile
+7.1 Inside the runfile: just write python version for heroku
+```
+touch runtime.txt
+touch Procfile
+```
